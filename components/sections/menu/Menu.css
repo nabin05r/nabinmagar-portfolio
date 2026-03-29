@@ -1,0 +1,133 @@
+/* Hamburger button */
+.menu-button{
+
+    width: clamp(4em, 5.5vw, 5em);
+    height: clamp(4em, 5.5vw, 5em);
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 30 ;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-button .circle {
+  background: rgba(255, 255, 255, 0.15); 
+  width: 100%;
+  height: 100%; 
+  top: 100%;
+  position: absolute;
+
+}
+
+.burger {
+    width: 100%;
+}
+.burger::after, .burger::before{
+    content: "";
+    display: block;
+    width: 40%;
+    /* background-color: #101828; */
+    background-color: #fff;
+    height: 1px;
+    margin: auto;
+    position: relative;
+    transition: all 0.3s;
+}
+.burger::after{
+    top: -5px;
+}
+.burger::before{
+    top: 5px;
+}
+.burgerActive::after{
+    top: -1px;
+    transform: rotate(45deg);
+}
+.burgerActive::before{
+    top: 0px;
+    transform: rotate(-45deg);
+}
+
+/* Nav Menu */
+.menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(22, 39, 52, 0.87);
+    color: #fff;
+    z-index: 20;
+     backdrop-filter: blur(6px);
+}
+.menu .body{
+    height: 100vh;
+    padding: 15vh 7.5vw 10vh 7.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu .body .nav{
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(2rem, 7vw, 56px);
+    gap: 12px;
+    margin-top: 40px;
+}
+.menu .body .nav .header{
+    color: rgb(153, 153, 153);
+    border-bottom: 1px solid rgb(153, 153, 153);
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 40px;
+}
+.menu .body .nav .header a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+.menu .body .footer{
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(1.5em, 4vw, 2.5em);
+    font-size: 14px;
+    font-weight: 300;
+}
+/* SVG CURVE */
+.svgCurve{
+    position: absolute;
+    top: 0;
+    left: -99px;
+    width: 100px;
+    height: 100%;
+    fill: rgba(22, 39, 52, 0.87);
+    stroke: none;
+    pointer-events: none; 
+}
+.link{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.indicator{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    width: 100vw;
+  }
+  .indicator {
+    left: auto;
+    right: .4em;
+  }
+}
