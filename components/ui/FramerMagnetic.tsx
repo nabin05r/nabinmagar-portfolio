@@ -10,12 +10,12 @@ export const FramerMagnetic = ({
   strength?: number,
   max?: number 
 }) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  const mouseMove = (e) => {
+  const mouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const { clientX, clientY } = e;
-    const { width, height, left, top } = ref.current.getBoundingClientRect();
+    const { width, height, left, top } = ref.current!.getBoundingClientRect();
     const rawX = (clientX - (left + width / 2)) 
     const rawY = (clientY - (top + height / 2)) 
 
