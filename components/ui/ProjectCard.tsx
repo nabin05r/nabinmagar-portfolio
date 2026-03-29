@@ -128,7 +128,7 @@ export const ProjectCard = ({
                     src={imageUrl}
                     alt={project.title}
                     fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    sizes="100vw"
                     className="object-cover object-left-top"
                   />
                 )}
