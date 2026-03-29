@@ -35,7 +35,7 @@ export const ProjectsSection = ({ projects }: { projects: Project[] }) => {
   });
 
   return (
-    <section className="pb-24 lg:py-24 relative" ref={container}>
+    <section className="pb-20 lg:py-24 relative" ref={container}>
       <div className="container">
         <SectionHeader
           subtitle="Built & Shipped"
