@@ -104,9 +104,10 @@ export const ProjectCard = ({
             </div>
             {/* Right: Image — bleeds to right edge */}
             <div className="relative overflow-hidden rounded-t-2xl lg:rounded-l-2xl lg:rounded-r-none mt-8 h-55 lg:mt-0 md:h-80 lg:absolute lg:right-0 lg:top-18 lg:bottom-0 lg:h-full lg:w-[55%] lg:-mr-20">
+              {/** For dekstop image */}
               <motion.div
                 style={{ scale: imageScale }}
-                className="absolute inset-0"
+                className="absolute inset-0 hidden md:block"
               >
                 {imageUrl && (
                   <Image
@@ -118,6 +119,20 @@ export const ProjectCard = ({
                   />
                 )}
               </motion.div>
+               {/** For mobile image */}
+              <div
+                className="absolute inset-0 block md:hidden"
+              >
+                {imageUrl && (
+                  <Image
+                    src={imageUrl}
+                    alt={project.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover object-left-top"
+                  />
+                )}
+              </div>
             </div>
           </div>
         </Card>
