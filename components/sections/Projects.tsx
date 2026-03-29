@@ -43,7 +43,7 @@ export const ProjectsSection = ({ projects }: { projects: Project[] }) => {
           description="Curated portfolio projects highlighting real-world solutions and development work."
         />
         {/* No gap here — each card is 100vh tall */}
-        <div className="mt-7 lg:-mt-[20px]">
+        <div className="mt-20 lg:-mt-[20px]">
           {projects.map((project, i) => (
             <ProjectCard
               key={project.id}
@@ -53,7 +53,8 @@ export const ProjectsSection = ({ projects }: { projects: Project[] }) => {
               i={i} // 0-indexed now
             />
           ))}
-          <div className="flex justify-center lg:mt-16">
+        </div>
+        <div className="flex justify-center mt-35 md:mt-20 lg:-mt-5 xl:-mt-10 relative z-10">
             <FramerMagnetic>
               <Button
                 label="View All Work"
@@ -61,7 +62,6 @@ export const ProjectsSection = ({ projects }: { projects: Project[] }) => {
               />
             </FramerMagnetic>
           </div>
-        </div>
       </div>
     </section>
   );

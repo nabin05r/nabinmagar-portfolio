@@ -53,7 +53,7 @@ export const ProjectCard = ({
   return (
     <div
       ref={container}
-      className="h-screen flex items-center justify-center sticky top-0"
+      className="md:h-screen flex items-center justify-center md:sticky md:top-0"
     >
       <motion.div
         style={{
