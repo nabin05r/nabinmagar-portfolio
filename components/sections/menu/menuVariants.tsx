@@ -1,33 +1,49 @@
 //   Animation for Menu Slide
-  export const menuSlide = {
-    initial: {
-      x: "calc(100% + 100px)",
+export const menuSlide = {
+  initial: {
+    x: "calc(100% + 100px)",
+  },
+  enter: {
+    x: "0",
+    transition: {
+      duration: 0.8,
+      ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
     },
-    enter: {
-      x: "0",
-      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
+  },
+  exit: {
+    x: "calc(100% + 100px)",
+    transition: {
+      duration: 0.8,
+      ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
     },
-    exit: {
-      x: "calc(100% + 100px)",
-      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
+  },
+};
+
+//   ANimation for the Nav LInks
+export const slide = {
+  initial: {
+    x: 80,
+  },
+  enter: (i: number) => ({
+    x: 0,
+    transition: {
+      duration: 0.8,
+      ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
+      delay: 0.05 * i,
     },
-  };
-  //   ANimation for the Nav LInks
-  export const slide = {
-    initial: {
-      x: 80,
+  }),
+  exit: (i: number) => ({
+    x: 80,
+    transition: {
+      duration: 0.8,
+      ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
+      delay: 0.05 * i,
     },
-    enter: (i) => ({
-      x: 0,
-      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i },
-    }),
-    exit: (i) => ({
-      x: 80,
-      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i },
-    }),
-  };
-  // Animation for scaling the indicator
-  export const scale = {
-    open: {scale: 1, transition: {duration: 0.3}},
-    closed: {scale: 0, transition: {duration: 0.4}}
-}
+  }),
+};
+
+// Animation for scaling the indicator
+export const scale = {
+  open: { scale: 1, transition: { duration: 0.3 } },
+  closed: { scale: 0, transition: { duration: 0.4 } },
+};
