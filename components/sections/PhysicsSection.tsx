@@ -22,7 +22,7 @@ export const PhysicsSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef<number>(0);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const engineRef = useRef<Matter.Engine | null>(null);
   const cardEls = useRef<HTMLElement[]>([]);
 
