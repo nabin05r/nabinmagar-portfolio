@@ -3,6 +3,8 @@ import { useRef } from "react";
 import { useScroll } from "framer-motion";
 import { SectionHeader } from "../ui/SectionHeader";
 import { ProjectCard } from "../ui/ProjectCard";
+import { FramerMagnetic } from "../ui/FramerMagnetic";
+import { Button } from "../ui/Button";
 
 type ProjectResult = {
   description: string;
@@ -33,7 +35,7 @@ export const ProjectsSection = ({ projects }: { projects: Project[] }) => {
   });
 
   return (
-    <section className="pb-16 lg:py-24 relative" ref={container}>
+    <section className="pb-24 lg:py-24 relative" ref={container}>
       <div className="container">
         <SectionHeader
           subtitle="Built & Shipped"
@@ -41,7 +43,7 @@ export const ProjectsSection = ({ projects }: { projects: Project[] }) => {
           description="Curated portfolio projects highlighting real-world solutions and development work."
         />
         {/* No gap here — each card is 100vh tall */}
-        <div className=" md:mt-7 lg:-mt-[20px]">
+        <div className="mt-7 lg:-mt-[20px]">
           {projects.map((project, i) => (
             <ProjectCard
               key={project.id}
@@ -51,6 +53,14 @@ export const ProjectsSection = ({ projects }: { projects: Project[] }) => {
               i={i} // 0-indexed now
             />
           ))}
+          <div className="flex justify-center lg:mt-16">
+            <FramerMagnetic>
+              <Button
+                label="View All Work"
+                href="/work"
+              />
+            </FramerMagnetic>
+          </div>
         </div>
       </div>
     </section>

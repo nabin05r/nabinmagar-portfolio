@@ -89,10 +89,7 @@ export default function ContactClient() {
   return (
     <main className="relative">
       <GrainImagePage />
-      <section
-        className="pt-30 pb-30 md:pt-[calc(clamp(5em,21vh,12em)*1.33)]
-       md:pb-[calc(clamp(5em,21vh,12em)*1.33)]"
-      >
+      <section className="pt-30 pb-30 md:pt-[calc(clamp(5em,21vh,12em)*1.33)] md:pb-[calc(clamp(5em,21vh,12em)*1.33)]">
         <div className="container-medium ">
           {/* Header */}
           <div className="flex items-end justify-between flex-col md:flex-row md:gap-5 lg:gap-20">
@@ -182,7 +179,7 @@ export default function ContactClient() {
               {/* Status Messages */}
                 {status === 'success' && (
                 <p className="text-emerald-400 mt-16 text-sm">
-                    ✓ Message sent successfully! I'll get back to you soon.
+                    ✓ Message sent successfully! I&apos;ll get back to you soon.
                 </p>
                 )}
                 {status === 'error' && (
