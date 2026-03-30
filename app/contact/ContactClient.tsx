@@ -96,7 +96,8 @@ export default function ContactClient() {
             <div className="w-full lg:w-[75%]">
               {/* For Desktop */}
               <h1 className="ngm-h1 font-display leading-[1.1] tracking-wide max-w-4xl hidden md:block">
-                Let&apos;s start a project together
+                {/* Let&apos;s start a project together */}
+                Let&apos;s start creating together
               </h1>
               {/* For Mobile & Tab  */}
               <ArrowDownIcon className="size-6 text-white rotate-45 md:hidden ml-auto mb-7" />
