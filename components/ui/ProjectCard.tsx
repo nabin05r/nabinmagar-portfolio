@@ -99,6 +99,7 @@ export const ProjectCard = ({
                 <FramerMagnetic>
                   <Button
                     label="Visit Live Site"
+                    aria-label={`Visit ${project.title} live site`}
                     className="mt-8 w-full inline-flex items-center justify-center gap-2 projects-card"
                     href={project.projectUrl}
                     icon={true}

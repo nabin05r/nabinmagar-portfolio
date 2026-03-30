@@ -33,17 +33,17 @@ export const Footer = () => {
           <div className="border-t border-white/15 mb-8 md:hidden" />
           <div className="flex gap-15 justify-between md:justify-start">
             <div>
-              <p className="text-white/40 mb-4 uppercase text-[10px] tracking-widest">Location</p>
+              <p className="text-white/50 mb-4 uppercase text-[10px] tracking-widest">Location</p>
               <p>Kathmandu, Nepal</p>
             </div>
             <div className="">
-            <p className="text-white/40 mb-4 uppercase text-[10px] tracking-widest">Local Time</p>
+            <p className="text-white/50 mb-4 uppercase text-[10px] tracking-widest">Local Time</p>
               <p>{time} UTC+5:45</p> {/* ← live time */}
             </div>
           </div>
         </div>
         <div className="order-1 md:order-2">
-          <p className="text-white/40 mb-4 uppercase text-[10px] tracking-widest">Socials</p>
+          <p className="text-white/50 mb-4 uppercase text-[10px] tracking-widest">Socials</p>
           <nav className="flex flex-row items-center gap-8">
             <FooterLinks />
           </nav>
