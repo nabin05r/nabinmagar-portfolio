@@ -90,7 +90,7 @@ export const ProjectCard = ({
                   </li>
                 ))}
               </ul>
-              <div className="md:max-w-62 overflow-hidden">
+              <div className="md:max-w-62 overflow-hidden rounded-[3em]">
                 <FramerMagnetic>
                   <Button
                     label="Visit Live Site"
