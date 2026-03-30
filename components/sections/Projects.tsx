@@ -54,7 +54,7 @@ export const ProjectsSection = ({ projects }: { projects: Project[] }) => {
             />
           ))}
         </div>
-        <div className="flex justify-center mt-40 md:mt-20 lg:-mt-5 xl:-mt-10 relative z-10">
+        <div className="flex justify-center mt-40 md:mt-20 lg:-mt-5 xl:-mt-8 relative z-10">
             <FramerMagnetic>
               <Button
                 label="View All Work"

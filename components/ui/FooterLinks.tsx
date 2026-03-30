@@ -13,6 +13,10 @@ const footerLinks = [
     title: "Github",
     href: "https://github.com/nabin05r",
   },
+  {
+    title: "Resume",
+    href: "/Nabin-Gharti-Magar-Resume.pdf",
+  },
 ];
 
 export const FooterLinks = ({ className }:{className?: string}) => {
