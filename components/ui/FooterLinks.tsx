@@ -27,7 +27,7 @@ export const FooterLinks = ({ className }:{className?: string}) => {
           <a
             href={item.href}
             key={item.title}
-            className={`inline-flex items-center gap-1.5`}
+            className={`inline-flex items-center gap-0 md:gap-1.5`}
             target={item.href.startsWith('mailto:') ? undefined : '_blank'}
             rel={item.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
           >
