@@ -446,3 +446,13 @@ body {
 .digital-ball:hover .overlay {
   opacity: 1;
 }
+
+ @media (width <= 767px) {
+    .digital-ball {
+      right: 30px;
+    }
+    .globe {
+      width: 3em;
+      height: 3em;
+    }
+}

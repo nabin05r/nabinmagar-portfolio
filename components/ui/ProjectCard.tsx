@@ -53,7 +53,7 @@ export const ProjectCard = ({
   return (
     <div
       ref={container}
-      className="md:h-screen flex items-center justify-center md:sticky md:top-0"
+      className="lg:h-screen flex items-center justify-center lg:sticky lg:top-0"
     >
       <motion.div
         style={{
@@ -107,7 +107,7 @@ export const ProjectCard = ({
               {/** For dekstop image */}
               <motion.div
                 style={{ scale: imageScale }}
-                className="absolute inset-0 hidden md:block"
+                className="absolute inset-0 hidden lg:block"
               >
                 {imageUrl && (
                   <Image
@@ -119,9 +119,9 @@ export const ProjectCard = ({
                   />
                 )}
               </motion.div>
-               {/** For mobile image */}
+               {/** For mobile & tablet image */}
               <div
-                className="absolute inset-0 block md:hidden"
+                className="absolute inset-0 block lg:hidden"
               >
                 {imageUrl && (
                   <Image
