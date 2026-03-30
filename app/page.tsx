@@ -15,13 +15,13 @@ export default async function Home() {
 );
 
   return (
-    <div>
+    <main>
       <HeroSection />
       <ProjectsSection projects={projects} />
       <TapeSection />
       <AboutSection />
       <ContactSection containerClass="container"/>
       <PhysicsSectionWrapper />
-    </div>
+    </main>
   );
 }

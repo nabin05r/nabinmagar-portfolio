@@ -136,7 +136,7 @@ export const HeroSection = () => {
       </div>
       <div className="container">
         <div className="flex flex-col items-center">
-          <Image src={memojiImage} className="size-[100px]" alt="NGM" />
+          <Image src={memojiImage} className="size-[100px]" alt="NGM" priority />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="absolute bg-green-500 inset-0 animate-ping-large rounded-full"></div>
