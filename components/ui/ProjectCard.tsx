@@ -1,6 +1,6 @@
 "use client";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Card } from "../ui/Card";
 import { FramerMagnetic } from "./FramerMagnetic";
 import { Button } from "../ui/Button";
@@ -50,6 +50,11 @@ export const ProjectCard = ({
   const category = project.categories.nodes[0]?.slug ?? "";
   const imageUrl = project.featuredImage?.node.sourceUrl ?? "";
 
+  const [isDesktop, setIsDesktop] = useState(false);
+  useEffect(() => {
+    setIsDesktop(window.innerWidth >= 1024);
+  }, []);
+
   return (
     <div
       ref={container}
@@ -57,13 +62,13 @@ export const ProjectCard = ({
     >
       <motion.div
         style={{
-          scale,
-          top: `calc(-5vh + ${i * 35}px)`,
+          scale: isDesktop ? scale : 1,
+          top: isDesktop ? `calc(-5vh + ${i * 35}px)` : 0,
         }}
         className="relative w-full"
       >
         <Card
-          className={`px-8 pt-8 md:pt-12 pb-0 md:px-10 lg:pt-16 lg:px-20 origin-top overflow-hidden `}
+          className={`px-8 pt-8 md:pt-12 pb-0 md:px-10 lg:pt-16 lg:px-20 origin-top overflow-hidden mb-10 lg:mb-0`}
           grainOpacity={0.1}
           style={{
             backdropFilter: "blur(20px)",
@@ -90,7 +95,7 @@ export const ProjectCard = ({
                   </li>
                 ))}
               </ul>
-              <div className="md:max-w-62 overflow-hidden rounded-[3em]">
+              <div className="md:max-w-62">
                 <FramerMagnetic>
                   <Button
                     label="Visit Live Site"
