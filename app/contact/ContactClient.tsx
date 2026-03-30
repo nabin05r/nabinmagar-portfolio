@@ -114,7 +114,7 @@ export default function ContactClient() {
                   {/* Let&apos;s start a */}Let&apos;s start 
                 </span>
                 {/* <span> project together</span> */}
-                <span>creating together</span>
+                <span> together</span>
               </h1>
             </div>
             <div className="w-full md:w-[25%] flex flex-col gap-16 relative hidden md:block">
