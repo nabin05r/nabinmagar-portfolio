@@ -111,7 +111,7 @@ export default function ContactClient() {
                     alt="Nabin Gharti Magar"
                     className="rounded-full object-cover size-10 md:size-12 inline-flex mr-3 -translate-y-1"
                   />
-                  {/* Let&apos;s start a */} Let&apos;s start 
+                  {/* Let&apos;s start a */}Let&apos;s start 
                 </span>
                 {/* <span> project together</span> */}
                 <span>creating together</span>
