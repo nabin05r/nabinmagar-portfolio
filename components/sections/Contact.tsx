@@ -1,4 +1,4 @@
-import grainImage from "@/assets/images/grain.jpg";
+import grainImage from "@/assets/images/grain.webp";
 import { Button } from "../ui/Button";
 import { FramerMagnetic } from "../ui/FramerMagnetic";
 

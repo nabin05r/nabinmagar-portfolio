@@ -1,4 +1,4 @@
-import grainImage from "@/assets/images/grain.jpg";
+import grainImage from "@/assets/images/grain.webp";
 
 export const GrainImagePage = () => {
     return (
