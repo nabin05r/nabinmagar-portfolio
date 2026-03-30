@@ -63,7 +63,7 @@ export const ProjectCard = ({
         className="relative w-full"
       >
         <Card
-          className={`px-8 pt-8 md:pt-12 pb-10 md:pb-0 md:px-10 lg:pt-16 lg:px-20 origin-top overflow-hidden `}
+          className={`px-8 pt-8 md:pt-12 pb-0 md:px-10 lg:pt-16 lg:px-20 origin-top overflow-hidden `}
           grainOpacity={0.1}
           style={{
             backdropFilter: "blur(20px)",
@@ -90,7 +90,7 @@ export const ProjectCard = ({
                   </li>
                 ))}
               </ul>
-              <div className="md:max-w-62">
+              <div className="md:max-w-62 overflow-hidden">
                 <FramerMagnetic>
                   <Button
                     label="Visit Live Site"
