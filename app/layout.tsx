@@ -29,6 +29,14 @@ export const metadata: Metadata = {
     description: "Senior Full Stack WordPress Developer specializing in custom WordPress and headless Next.js architectures.",
     url: "https://nabinmagar.com",
     siteName: "Nabin Gharti Magar Portfolio",
+     images: [
+      {
+        url: "https://nabinmagar.com/nabinmagar-sticker.png",
+        width: 1200,
+        height: 630,
+        alt: "Nabin Gharti Magar Portfolio",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
