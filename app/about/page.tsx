@@ -124,10 +124,10 @@ export default function About() {
                     01
                   </span>
                   <hr className="border-white/10 mt-4" />
-                  <h4 className="text-2xl font-semibold mt-4 text-white/90">
+                  <h4 className="text-xl 2xl:text-2xl font-semibold mt-4 text-white/90">
                     WordPress Development
                   </h4>
-                  <div className="mt-6 text-base leading-relaxed text-white/60 flex flex-col gap-3 flex-1">
+                  <div className="mt-6 text-sm 2xl:text-base leading-relaxed text-white/60 flex flex-col gap-3 flex-1">
                     <p className="service-item">
                       Custom Theme development
                     </p>
@@ -146,10 +146,10 @@ export default function About() {
                     02
                   </span>
                   <hr className="border-white/10 mt-4" />
-                  <h4 className="font-semibold text-2xl mt-4 text-white/90">
+                  <h4 className="font-semibold text-xl 2xl:text-2xl mt-4 text-white/90">
                     Headless & Modern Web
                   </h4>
-                  <div className="mt-6 text-base leading-relaxed text-white/60 flex flex-col gap-3 flex-1">
+                  <div className="mt-6 text-sm 2xl:text-base leading-relaxed text-white/60 flex flex-col gap-3 flex-1">
                     <p className="service-item">
                       Headless WordPress with Next.js
                     </p>
@@ -173,10 +173,10 @@ export default function About() {
                     03
                   </span>
                   <hr className="border-white/10 mt-4" />
-                  <h4 className="font-semibold text-2xl mt-4 text-white/90">
+                  <h4 className="font-semibold text-xl 2xl:text-2xl mt-4 text-white/90">
                     Support & Maintenance
                   </h4>
-                  <div className="mt-6 text-base leading-relaxed text-white/60 flex flex-col gap-3 flex-1">
+                  <div className="mt-6 text-sm 2xl:text-base leading-relaxed text-white/60 flex flex-col gap-3 flex-1">
                     <p className="service-item">WordPress migrations</p>
                     <p className="service-item">Security hardening</p>
                     <p className="service-item">Plugin & theme updates</p>
