@@ -1,6 +1,6 @@
 export const GET_PROJECTS = `
   query GetProjects {
-    projects {
+    projects(first: 50) {
       nodes {
         id
         title
