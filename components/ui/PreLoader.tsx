@@ -79,8 +79,7 @@ export const PreLoader = () => {
           variants={slideUp}
           initial = 'initial'
           exit='exit'
-          className="w-screen bg-[#162734] fixed top-0 left-0 z-[9999] text-white flex items-center justify-center"
-          style={{ height: '100svh' }}
+          className="w-screen bg-[#162734] fixed inset-0 z-[9999] text-white flex items-center justify-center"
         >
             <motion.p
                 variants={opacity} 
