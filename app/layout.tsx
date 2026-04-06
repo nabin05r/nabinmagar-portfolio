@@ -21,8 +21,23 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: "Nabin Gharti Magar | WordPress & Headless Developer",
-  description: "Senior Full Stack WordPress Developer based in Kathmandu, Nepal. Specializing in custom WordPress themes, plugins, WooCommerce, and headless Next.js architectures.",
-  keywords: ["WordPress Developer", "Headless WordPress", "Next.js", "WPGraphQL", "PHP", "Nepal"],
+  description: "Nabin Magar (Nabin Gharti Magar) - Senior Full Stack WordPress Developer based in Kathmandu, Nepal. One of Nepal's experienced WordPress developers specializing in custom themes, plugins, WooCommerce, and headless Next.js architectures.",
+  keywords: [
+    "WordPress Developer",
+    "Headless WordPress",
+    "Next.js",
+    "WPGraphQL",
+    "PHP",
+    "Nepal",
+    "Nabin Magar",
+    "Nabin Gharti Magar",
+    "WordPress Developer Nepal",
+    "WordPress Developer Kathmandu",
+    "Top WordPress Developer Nepal",
+    "Best WordPress Developer Nepal",
+    "Freelance WordPress Developer Nepal",
+    "Headless WordPress Nepal",
+  ],
   authors: [{ name: "Nabin Gharti Magar" }],
   creator: "Nabin Gharti Magar",
   openGraph: {
@@ -58,6 +73,34 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${calistoga.variable} antialiased font-sans relative`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Nabin Gharti Magar",
+              "alternateName": "Nabin Magar",
+              "image": "https://nabinmagar.com/nabinmagar-sticker.png",
+              "url": "https://nabinmagar.com",
+              "jobTitle": "WordPress & Headless Developer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Funz Technology"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Kathmandu",
+                "addressCountry": "Nepal"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/in/nabin-magar-354879261/",
+                "https://github.com/nabin05r",
+                "https://wordpress.org/support/users/nabinmagar/"
+              ]
+            })
+          }}
+        />
         <PreLoader />
         <LenisProvider />
         <Header />
